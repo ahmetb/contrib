@@ -22,7 +22,7 @@ set -o pipefail
 TMP_SUBDIR="${TMP_SUBDIR:-debug-tools}"
 CONTEXT="${KUBECONTEXT:-}"
 ARCH="${ARCH:-amd64}"
-HOST_DOCKERPATH="${HOST_DOCKERPATH:/usr/bin/docker}"
+HOST_DOCKERPATH="${HOST_DOCKERPATH:-/usr/bin/docker}"
 
 # Parse arguments & flags
 while [[ $# -gt 0 ]]; do
